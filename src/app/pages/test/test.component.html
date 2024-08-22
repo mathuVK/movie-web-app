@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+<app-segmented-control [config] = "segments"></app-segmented-control>
+<app-input></app-input>
+<div class="test">
+    <img src="https://images.app.goo.gl/UnmksTACbocstUeq6" alt="Mountains at sunrise/sunset">
+</div>
+
+<app-rate-chip [rate]="6.15255" [placeDecimals]="2"></app-rate-chip>
+
+
+<div class="movie-section">
+    @for(item of movieCards; track $index){
+        <app-movie-card [config]="item"></app-movie-card>
+
+
+    }
+</div>
